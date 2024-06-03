@@ -1,0 +1,22 @@
+/* Reset básico */
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: chartreuse;
+    padding: 48px;
+}
+
+.container {
+    grid-template-columns: 100px 200px 150px; /* Define el ancho de columnas */
+    grid-template-rows: 100px 200px 50px; /* Esto define el alto de cada fila */
+    display: grid;
+    background-color: rgb(255, 87, 247);
+    width: 500px;
+    height: 500px;
+    margin: 0 auto; /* Esto centra el elemento cuando tiene ancho definido */
+}
