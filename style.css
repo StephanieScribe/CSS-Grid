@@ -11,9 +11,10 @@ body {
     padding: 48px;
 }
 
+/* Hacer que container tenga una grilla de 5 columnas y 5 filas del mismo ancho y alto */
 .container {
-    grid-template-columns: 100px 200px 150px; /* Define el ancho de columnas */
-    grid-template-rows: 100px 200px 50px; /* Esto define el alto de cada fila */
+    grid-template-columns: repeat(5, 1fr); /* Define el ancho de columnas */
+    grid-template-rows: repeat(3, 1fr 2fr); /* Esto define el alto de cada fila */
     display: grid;
     background-color: rgb(255, 87, 247);
     width: 500px;
