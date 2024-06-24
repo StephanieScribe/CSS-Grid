@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: chartreuse;
+    background-color: rgb(73, 5, 8);
     padding: 48px;
 }
 
@@ -16,12 +16,14 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
     grid-template-rows: repeat(3, 1fr);
+    gap: 24px;
+    
+    grid-auto-flow: row; /* Es el valor por default */
+    /* grid-auto-flow: column; */ /* Este valor cambia o ajusta el flujo a columnas */
 
-    gap: 24px; /* Define el espacio entre filas y columnas */
-    row-gap: 50px; /* Espacio entre filas y columnas */
-    column-gap: 10px; /* Espacio entre columnas */
-
-    /* Coloquen 5 items con colores de fondo diferentes */
+    /* Esto no es de grid, pero funciona para cambiar la dirección */
+    direction: rtl; /* Right to Left */
+   
 
     background-color: rgb(255, 237, 189);
     width: 500px;
@@ -29,22 +31,31 @@ body {
     margin: 0 auto; /* Esto centra el elemento cuando tiene ancho definido */
 }
 
-.hotcake {
-    background-color: burlywood;
+.item-1 {
+    background-color: chocolate;
 }
 
-.mermelada {
-    background-color: crimson;
+.item-2 {
+    background-color: darkred;
 }
 
-.harina {
-    background-color: bisque;
-}
-
-.huevo {
+.item-3 {
     background-color: coral;
 }
 
-.leche {
-    background-color: cornsilk;
+.item-4 {
+    background-color: darkorange;
+}
+
+.item-5 {
+    background-color: gold;
+}
+
+.container div {
+    font-size: 32px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(37, 2, 4);
 }
