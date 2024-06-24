@@ -14,36 +14,37 @@ body {
 /* Hacer que container tenga una grilla de 5 columnas y 5 filas del mismo ancho y alto */
 .container {
     display: grid;
-    grid-template-columns: repeat(3, 100px); 
-    grid-template-rows: repeat(3, 100px);
-    grid-template-areas:   
-        "header header header"
-        "main   main   sidebar"
-        "footer  footer  footer";
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(3, 1fr);
 
+    gap: 24px; /* Define el espacio entre filas y columnas */
+    row-gap: 50px; /* Espacio entre filas y columnas */
+    column-gap: 10px; /* Espacio entre columnas */
 
-    background-color: rgb(255, 87, 247);
+    /* Coloquen 5 items con colores de fondo diferentes */
+
+    background-color: rgb(255, 237, 189);
     width: 500px;
     height: 500px;
     margin: 0 auto; /* Esto centra el elemento cuando tiene ancho definido */
 }
 
-.header {
-    grid-area: header;
-    background-color: rgb(63, 20, 255);
+.hotcake {
+    background-color: burlywood;
 }
 
-.main {
-    grid-area: main;
-    background-color: blueviolet;
+.mermelada {
+    background-color: crimson;
 }
 
-.sidebar {
-    grid-area: sidebar;
-    background-color: rgb(220, 20, 160);
+.harina {
+    background-color: bisque;
 }
 
-.footer {
-    grid-area:  footer;
-    background-color: rgb(0, 255, 34);
+.huevo {
+    background-color: coral;
+}
+
+.leche {
+    background-color: cornsilk;
 }
